@@ -31,25 +31,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     const model = await loadModel();
 
     // Get necessary DOM elements
-    const imageUpload = document.getElementById('imageUpload');
+//    const imageUpload = document.getElementById('imageUpload');
     const selectedImage = document.getElementById('selectedImage');
     const predictButton = document.getElementById('predictButton');
     const predictionResult = document.getElementById('predictionResult');
 
     // Event listener for when an image is uploaded
-    imageUpload.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
+    // imageUpload.addEventListener('change', (event) => {
+    //     const file = event.target.files[0];
+    //     const reader = new FileReader();
 
-        // Display the selected image on the webpage
-        reader.onload = function (e) {
-            selectedImage.src = e.target.result;
-            selectedImage.style.display = 'block';
-        };
+    //     // Display the selected image on the webpage
+    //     reader.onload = function (e) {
+    //         selectedImage.src = e.target.result;
+    //         selectedImage.style.display = 'block';
+    //     };
 
-        // Read the uploaded image file as data URL
-        reader.readAsDataURL(file);
-    });
+    //     // Read the uploaded image file as data URL
+    //     reader.readAsDataURL(file);
+    // });
 
     // Event listener for when the predict button is clicked
     predictButton.addEventListener('click', async () => {
