@@ -53,12 +53,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Event listener for when the predict button is clicked
     predictButton.addEventListener('click', async () => {
+        let result = await saveCanvas();
         // Preprocess the selected image
         const image = preprocessImage(selectedImage);
         // Predict the class of the preprocessed image
         const prediction = await predictImage(model, image);
         // Display the predicted class on the webpage
-        predictionResult.innerHTML = `Predicted class: ${prediction}`;
+        predictionResult.innerHTML = `${prediction}`;
         // Dispose the preprocessed image tensor to free memory
         image.dispose();
     });
