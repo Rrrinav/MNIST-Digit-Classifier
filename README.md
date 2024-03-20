@@ -1,5 +1,5 @@
 ## Handwritten Digit Classifier with TensorFlow.js
-
+![](https://github.com/Rrrinav/MNIST-Digit-Classifier/blob/main/demo.gif?raw=true)
 This project implements a Convolutional Neural Network (CNN) for classifying handwritten digits using TensorFlow.js. The web app allows users to interact with the model and classify handwritten digits in real-time.
 
 ### Project Description
