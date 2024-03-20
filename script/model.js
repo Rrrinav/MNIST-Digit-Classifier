@@ -1,6 +1,6 @@
 // Load the trained model asynchronously from the specified file path
 async function loadModel() {
-    return await tf.loadLayersModel('./mnist-digit-classifier.json');
+    return await tf.loadLayersModel('./model/mnist-digit-classifier.json');
 }
 
 // Preprocess the uploaded image before making predictions
